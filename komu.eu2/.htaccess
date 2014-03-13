@@ -1,0 +1,13 @@
+#RewriteEngine on
+
+#RewriteBase /
+#URL BREVE
+#RewriteCond %{HTTP_HOST} ^komu.eu [NC]
+#RewriteRule ^(.*)$ http://www.komu.eu/$1 [R=301]
+#ErrorDocument 404 /404.php
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^(.*)$ $1.php
+
+
+#RewriteCond $1 !^(index\.php|images|css|js|sitemap\.xml|robots\.txt)
+#RewriteRule ^(.*)$ /index.php?page=$1 [L]
